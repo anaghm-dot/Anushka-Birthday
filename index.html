@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy 20th Birthday, Anushka</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,600;0,700;1,600&family=Manrope:wght@400;500;600;700&family=Caveat:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="site-nav">
+    <div class="wrap">
+      <a href="index.html" class="brand"><span class="brand-dot"></span> Anushka Turns 20</a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="gallery.html">Memories</a></li>
+        <li><a href="letter.html">Letter</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- persistent messages that appear at the borders of the page once the surprise happens -->
+  <div class="border-clouds" id="borderClouds" aria-hidden="true">
+    <!-- EDIT: these four notes are written by you, for Anushka -->
+    <div class="b-cloud pos-tl">You've grown into someone we all admire 🌸</div>
+    <div class="b-cloud pos-tr">Twenty years of you, and still not enough 💕</div>
+    <div class="b-cloud pos-bl">Here's to every adventure ahead 🎈</div>
+    <div class="b-cloud pos-br">Loved today, tomorrow, always 🤍</div>
+  </div>
+
+  <main class="experience wrap">
+
+    <!-- Stage 1: countdown -->
+    <section class="exp-stage stage-countdown is-active" id="stageCountdown">
+      <span class="modal-eyebrow">Almost Time</span>
+      <h2>Counting down to Anushka's 20th</h2>
+      <p class="modal-desc">Midnight on 14 August, right on the dot.</p>
+      <div class="modal-countdown" data-countdown>
+        <div class="seg"><span class="num" data-days>–</span><span class="lbl">Days</span></div>
+        <div class="seg"><span class="num" data-hours>–</span><span class="lbl">Hrs</span></div>
+        <div class="seg"><span class="num" data-mins>–</span><span class="lbl">Min</span></div>
+        <div class="seg"><span class="num" data-secs>–</span><span class="lbl">Sec</span></div>
+      </div>
+    </section>
+
+    <!-- Stage 2: celebration burst -->
+    <section class="exp-stage" id="stageCelebrate">
+      <h1 class="celebrate-text">Happy Birthday<br><em>Anushka</em></h1>
+    </section>
+
+    <!-- Stage 3: cut the cake -->
+    <section class="exp-stage" id="stageCake">
+      <div class="cake-candles" aria-hidden="true">
+        <div class="candle" style="height:50px;"><span class="flame"></span></div>
+        <div class="candle" style="height:64px;"><span class="flame"></span></div>
+        <div class="candle" style="height:56px;"><span class="flame"></span></div>
+        <div class="candle" style="height:68px;"><span class="flame"></span></div>
+        <div class="candle" style="height:52px;"><span class="flame"></span></div>
+      </div>
+      <div class="cut-cake" id="cutCake" role="button" aria-label="Tap anywhere to cut the cake">
+        <div class="cake-glow" aria-hidden="true"></div>
+        <div class="cake-plate" aria-hidden="true"></div>
+        <div class="cake-cherry" aria-hidden="true">🍒</div>
+        <div class="cake-topper" aria-hidden="true">
+          <span class="cake-sprinkle spr-1"></span>
+          <span class="cake-sprinkle spr-2"></span>
+          <span class="cake-sprinkle spr-3"></span>
+          <span class="cake-sprinkle spr-4"></span>
+          <span class="cake-sprinkle spr-5"></span>
+        </div>
+        <div class="knife" id="knife" aria-hidden="true"></div>
+        <div class="cake-half half-left"></div>
+        <div class="cake-half half-right"></div>
+      </div>
+      <p class="tap-cake-hint">Cut the cake by tapping anywhere on the cake 🍰</p>
+    </section>
+
+    <!-- Stage 4: bouquet surprise -->
+    <section class="exp-stage" id="stageBouquet">
+      <svg class="bouquet-center" viewBox="0 0 120 170" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <radialGradient id="lilyPetal" cx="50%" cy="88%" r="95%">
+            <stop offset="0%" stop-color="#FFFFFF"/>
+            <stop offset="45%" stop-color="#FDCEDF"/>
+            <stop offset="100%" stop-color="#E0577A"/>
+          </radialGradient>
+          <g id="lilyFlower">
+            <g fill="url(#lilyPetal)" stroke="#C43F68" stroke-width="1">
+              <path d="M0,0 C-8,-14 -10,-30 0,-42 C10,-30 8,-14 0,0 Z"/>
+              <path d="M0,0 C-8,-14 -10,-30 0,-42 C10,-30 8,-14 0,0 Z" transform="rotate(60)"/>
+              <path d="M0,0 C-8,-14 -10,-30 0,-42 C10,-30 8,-14 0,0 Z" transform="rotate(120)"/>
+              <path d="M0,0 C-8,-14 -10,-30 0,-42 C10,-30 8,-14 0,0 Z" transform="rotate(180)"/>
+              <path d="M0,0 C-8,-14 -10,-30 0,-42 C10,-30 8,-14 0,0 Z" transform="rotate(240)"/>
+              <path d="M0,0 C-8,-14 -10,-30 0,-42 C10,-30 8,-14 0,0 Z" transform="rotate(300)"/>
+            </g>
+            <line x1="0" y1="0" x2="0" y2="-22" stroke="#D89B3C" stroke-width="1.4" transform="rotate(30)"/>
+            <line x1="0" y1="0" x2="0" y2="-22" stroke="#D89B3C" stroke-width="1.4" transform="rotate(90)"/>
+            <line x1="0" y1="0" x2="0" y2="-22" stroke="#D89B3C" stroke-width="1.4" transform="rotate(150)"/>
+            <line x1="0" y1="0" x2="0" y2="-22" stroke="#D89B3C" stroke-width="1.4" transform="rotate(210)"/>
+            <line x1="0" y1="0" x2="0" y2="-22" stroke="#D89B3C" stroke-width="1.4" transform="rotate(270)"/>
+            <line x1="0" y1="0" x2="0" y2="-22" stroke="#D89B3C" stroke-width="1.4" transform="rotate(330)"/>
+            <ellipse cx="0" cy="-22" rx="2.3" ry="4" fill="#B5651D" transform="rotate(30)"/>
+            <ellipse cx="0" cy="-22" rx="2.3" ry="4" fill="#B5651D" transform="rotate(90)"/>
+            <ellipse cx="0" cy="-22" rx="2.3" ry="4" fill="#B5651D" transform="rotate(150)"/>
+            <ellipse cx="0" cy="-22" rx="2.3" ry="4" fill="#B5651D" transform="rotate(210)"/>
+            <ellipse cx="0" cy="-22" rx="2.3" ry="4" fill="#B5651D" transform="rotate(270)"/>
+            <ellipse cx="0" cy="-22" rx="2.3" ry="4" fill="#B5651D" transform="rotate(330)"/>
+            <g fill="#B5335A" opacity="0.75">
+              <circle cx="-4" cy="-9" r="1.2"/>
+              <circle cx="3" cy="-7" r="1"/>
+              <circle cx="-6" cy="-15" r="0.9"/>
+              <circle cx="5" cy="-13" r="1.1"/>
+              <circle cx="0" cy="-5" r="0.9"/>
+            </g>
+          </g>
+        </defs>
+
+        <!-- stems -->
+        <path d="M60,170 C60,140 60,110 60,58" stroke="#6F8F63" stroke-width="3.5" fill="none"/>
+        <path d="M60,120 C48,128 40,135 32,146" stroke="#6F8F63" stroke-width="2.5" fill="none"/>
+        <path d="M60,112 C74,120 82,127 90,140" stroke="#6F8F63" stroke-width="2.5" fill="none"/>
+        <ellipse cx="42" cy="110" rx="12" ry="5" fill="#6F8F63" transform="rotate(-30 42 110)"/>
+        <ellipse cx="80" cy="100" rx="12" ry="5" fill="#7C9E6E" transform="rotate(28 80 100)"/>
+
+        <!-- ribbon -->
+        <path d="M46,158 C46,150 56,150 60,158 C64,150 74,150 74,158 C74,166 64,166 60,158 C56,166 46,166 46,158 Z" fill="#E0577A"/>
+        <circle cx="60" cy="158" r="3" fill="#C43F68"/>
+
+        <!-- three lilies -->
+        <use href="#lilyFlower" x="0" y="0" transform="translate(34,86) scale(0.78) rotate(-16)"/>
+        <use href="#lilyFlower" x="0" y="0" transform="translate(86,80) scale(0.78) rotate(16)"/>
+        <use href="#lilyFlower" x="0" y="0" transform="translate(60,58) scale(1.15)"/>
+      </svg>
+      <p class="final-line">A little surprise for you, Anushka 🌷</p>
+    </section>
+
+    <!-- Stage 5: navigate onward -->
+    <section class="exp-stage" id="stageButtons">
+      <span class="modal-eyebrow">Happy 20th Birthday</span>
+      <h2 class="buttons-title">What would you like to see first?</h2>
+      <div class="stage-btn-row">
+        <a href="gallery.html" class="btn btn-primary">Our Memories 💕</a>
+        <a href="letter.html" class="btn btn-ghost">A Letter For You 💌</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="wrap">
+      Made with love, one candle at a time <span class="fam">— your family</span>
+    </div>
+  </footer>
+
+  <div class="emoji-rain" id="emojiRain" aria-hidden="true"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

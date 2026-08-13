@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A Letter For You — Anushka's 20th</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,600;0,700;1,600&family=Manrope:wght@400;500;600;700&family=Caveat:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="site-nav">
+    <div class="wrap">
+      <a href="index.html" class="brand"><span class="brand-dot"></span> Anushka Turns 20</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gallery.html">Memories</a></li>
+        <li><a href="letter.html" class="active">Letter</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="corner-deco dc-tl" aria-hidden="true">🌷</div>
+  <div class="corner-deco dc-tr" aria-hidden="true">🌸</div>
+  <div class="corner-deco dc-bl" aria-hidden="true">🤍</div>
+  <div class="corner-deco dc-br" aria-hidden="true">🌷</div>
+
+  <main class="letter-page wrap">
+
+    <!-- Envelope: tap/click to open -->
+    <div class="envelope-wrap" id="envelopeWrap">
+      <div class="envelope" id="envelope" tabindex="0" role="button" aria-label="Open your letter">
+        <div class="env-back"></div>
+        <div class="env-letter" aria-hidden="true"></div>
+        <div class="env-flap"></div>
+        <div class="env-seal" aria-hidden="true">💌</div>
+      </div>
+      <p class="envelope-hint">Tap the envelope to open your letter</p>
+    </div>
+
+    <!-- Revealed letter -->
+    <article class="letter-content" id="letterContent" hidden>
+      <div class="letter-paper-card">
+        <p class="letter-to">To my dearest Anushka,</p>
+
+        <!-- EDIT: this is a placeholder — replace every line below with your own words to her -->
+        <p>
+          Twenty years ago you showed up and made the whole family louder,
+          warmer, and a little more chaotic — in the best way. Every birthday
+          since has felt like a small reminder of how lucky we are to have you.
+        </p>
+        <p>
+          Here's to the girl who has an opinion about everything, a soft spot
+          for everyone, and a memory that never lets any of us live anything
+          down. We love you more than we ever manage to say out loud, so we're
+          saying it here instead.
+        </p>
+        <p>
+          Whatever this year brings, know that you've got a whole family
+          cheering you on from right here.
+        </p>
+        <p>Happy 20th birthday. This one's a big one — go make it count.</p>
+
+        <p class="letter-sign">With all our love,<br>Your whole family</p>
+      </div>
+      <a href="index.html" class="btn btn-ghost back-link">← Back Home</a>
+    </article>
+
+  </main>
+
+  <footer>
+    <div class="wrap">
+      Made with love, one candle at a time <span class="fam">— your family</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
