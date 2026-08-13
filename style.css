@@ -4,20 +4,20 @@
    ============================================================ */
 
 :root{
-  --pink:         #FFEEF3;
-  --pink-deep:    #FFF8FA;
-  --card:         #FFFFFF;
-  --paper:        #FFFBF8;
-  --ink:          #5A2E45;
-  --ink-dim:      #8C6178;
-  --gold:         #D89B3C;
-  --gold-soft:    #E7B563;
-  --blush:        #E0577A;
-  --sage:         #6F8F63;
+  --pink: #FFEEF3;
+  --pink-deep: #FFF8FA;
+  --card: #FFFFFF;
+  --paper: #FFFBF8;
+  --ink: #5A2E45;
+  --ink-dim: #8C6178;
+  --gold: #D89B3C;
+  --gold-soft: #E7B563;
+  --blush: #E0577A;
+  --sage: #6F8F63;
 
   --font-display: "Fraunces", Georgia, serif;
-  --font-body:    "Manrope", -apple-system, sans-serif;
-  --font-hand:    "Caveat", cursive;
+  --font-body: "Manrope", -apple-system, sans-serif;
+  --font-hand: "Caveat", cursive;
 
   --max-w: 1120px;
   --radius: 18px;
@@ -412,8 +412,6 @@ a{
   transform:scale(0.965);
 }
 
-
-/* inviting glow ring */
 .cake-glow{
   position:absolute;
   inset:-26px -30px;
@@ -445,8 +443,6 @@ a{
   animation:none;
 }
 
-
-/* plate */
 .cake-plate{
   position:absolute;
   bottom:-16px;
@@ -464,8 +460,6 @@ a{
   z-index:0;
 }
 
-
-/* cake halves */
 .cake-half{
   width:50%;
   height:100%;
@@ -540,8 +534,6 @@ a{
   opacity:0;
 }
 
-
-/* cake topper */
 .cake-topper{
   position:absolute;
   top:-32px;
@@ -644,8 +636,6 @@ a{
     rotate(30deg);
 }
 
-
-/* knife */
 .knife{
   position:absolute;
   top:-24px;
@@ -862,7 +852,7 @@ a{
 
 
 /* ============================================================
-   LETTER PAGE — ENVELOPE + REVEAL
+   LETTER PAGE
    ============================================================ */
 
 .letter-page{
@@ -1019,7 +1009,7 @@ a{
 
 
 /* ============================================================
-   GALLERY PAGE — PHOTOS
+   GALLERY PAGE
    ============================================================ */
 
 .gallery-hero{
@@ -1116,7 +1106,10 @@ a{
 }
 
 
-/* clothespin */
+/* ============================================================
+   CLOTHESPIN
+   ============================================================ */
+
 .photo-card::before{
   content:"";
   position:absolute;
@@ -1159,7 +1152,83 @@ a{
    PHOTO FRAME — FIXED
    ============================================================ */
 
+.photo-frame{
+  width:100%;
+  aspect-ratio:4/5;
+  border-radius:3px;
+  overflow:hidden;
+  background:#FFFFFF;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  position:relative;
+}
 
+/*
+   The image fills the available frame while preserving
+   its original proportions.
+*/
+.photo-frame img{
+  width:100%;
+  height:100%;
+  object-fit:contain;
+  display:block;
+  background:#FFFFFF;
+  position:relative;
+  z-index:2;
+}
+
+/*
+   IMPORTANT:
+   Because your HTML contains BOTH the image and
+   "Add photo" placeholder, the placeholder must be
+   hidden when the image exists.
+*/
+.photo-frame img + .photo-placeholder{
+  display:none !important;
+}
+
+
+/* ============================================================
+   PHOTO PLACEHOLDER
+   ============================================================ */
+
+.photo-placeholder{
+  position:absolute;
+  inset:0;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  color:#A5677E;
+  font-size:0.82rem;
+  padding:14px;
+  z-index:1;
+}
+
+.photo-placeholder .plus{
+  font-size:1.8rem;
+  display:block;
+  margin-bottom:6px;
+  font-family:var(--font-display);
+}
+
+
+/* ============================================================
+   PHOTO CAPTION
+   ============================================================ */
+
+.photo-caption{
+  font-family:var(--font-hand);
+  font-size:1.22rem;
+  color:var(--ink);
+  text-align:center;
+  margin-top:14px;
+  line-height:1.25;
+  border-top:1px dashed rgba(224,87,122,0.25);
+  padding-top:10px;
+}
 
 
 /* ============================================================
@@ -1234,7 +1303,7 @@ footer .fam{
 
 
 /* ============================================================
-   RESPONSIVE
+   RESPONSIVE / MOBILE
    ============================================================ */
 
 @media (max-width:640px){
@@ -1281,10 +1350,6 @@ footer .fam{
     width:150px;
   }
 
-  /*
-     Mobile photo frame.
-     Keeps the whole image visible.
-  */
   .photo-frame{
     aspect-ratio:4/5;
   }
