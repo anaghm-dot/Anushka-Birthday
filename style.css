@@ -479,7 +479,13 @@ a{ color:inherit; }
   display:flex; align-items:center; justify-content:center;
   position:relative;
 }
-.photo-frame img{ width:100%; height:100%; object-fit:cover; display:none; }
+.photo-frame img{
+  width:100%;
+  height:100%;
+  object-fit:contain;
+  display:none;
+  background:#fff;
+}
 .photo-frame img[src]:not([src=""]){ display:block; }
 .photo-placeholder{ text-align:center; color:#A5677E; font-size:0.82rem; padding:14px; }
 .photo-placeholder .plus{ font-size:1.8rem; display:block; margin-bottom:6px; font-family:var(--font-display); }
