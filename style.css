@@ -1362,3 +1362,8 @@ footer .fam{
     font-size:1.05rem;
   }
 }
+
+/* Remove all Add photo placeholders */
+.photo-placeholder {
+    display: none !important;
+}
